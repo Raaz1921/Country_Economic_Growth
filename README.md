@@ -14,6 +14,9 @@ An **industry-grade machine learning project** that predicts economic activity i
 ---
 
 ## 🎯 Project Overview
+![photo_1947-11-12 23 14 02](https://github.com/user-attachments/assets/010029b8-620b-472b-bc01-c93d2f9205b5)
+![photo_1947-11-12 23 14 16](https://github.com/user-attachments/assets/cfa5c4da-5d50-48c8-9b99-80d43cec2c2f)
+![photo_1947-11-12 23 18 07](https://github.com/user-attachments/assets/5f8e0c32-2c61-4f19-b32a-1424b8774822)
 
 This project leverages satellite imagery to predict five key economic indicators:
 
@@ -24,6 +27,7 @@ This project leverages satellite imagery to predict five key economic indicators
 | **Building Density** | Building footprint coverage | 0-1 | Infrastructure growth |
 | **Road Network Density** | Road infrastructure | km/km² | Transportation assessment |
 | **Vegetation Index** | Green coverage (NDVI) | -1 to 1 | Environmental monitoring |
+
 
 ### 🌟 Key Features
 
