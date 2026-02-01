@@ -1,0 +1,47 @@
+# Sample labels CSV format
+# This file shows the expected structure for your economic indicators dataset
+
+# Required columns:
+# - image_filename: Name of the satellite image file
+# - economic_activity: Overall economic activity index (0-100 or normalized)
+# - nightlight_intensity: Nighttime light intensity (DN values or normalized)
+# - building_density: Building footprint density (percentage or count)
+# - road_density: Road network density (km/km² or normalized)
+# - vegetation_index: NDVI or similar vegetation metric (-1 to 1)
+
+# Optional columns:
+# - latitude: Latitude of image center
+# - longitude: Longitude of image center
+# - date: Date of image acquisition
+# - region: Geographic region identifier
+
+image_filename,economic_activity,nightlight_intensity,building_density,road_density,vegetation_index,latitude,longitude,date,region
+image_001.tif,75.3,0.82,0.45,12.5,0.35,40.7128,-74.0060,2023-06-15,New_York
+image_002.tif,45.2,0.35,0.15,5.2,0.68,51.5074,-0.1278,2023-06-16,London
+image_003.tif,88.7,0.95,0.68,18.3,0.22,35.6762,139.6503,2023-06-17,Tokyo
+image_004.tif,32.1,0.18,0.08,2.1,0.85,19.4326,-99.1332,2023-06-18,Mexico_City
+image_005.tif,92.5,0.98,0.75,22.1,0.15,1.3521,103.8198,2023-06-19,Singapore
+
+# Notes:
+# 1. Economic activity can be derived from:
+#    - GDP estimates
+#    - Nighttime lights
+#    - Building construction activity
+#    - Traffic patterns
+#
+# 2. Nightlight intensity typically comes from:
+#    - VIIRS/DMSP nighttime lights data
+#    - Normalized to 0-1 range
+#
+# 3. Building density can be calculated from:
+#    - OpenStreetMap building footprints
+#    - Satellite image segmentation
+#    - Census data
+#
+# 4. Road density from:
+#    - OpenStreetMap road networks
+#    - Total road length / area
+#
+# 5. Vegetation index:
+#    - NDVI = (NIR - Red) / (NIR + Red)
+#    - Values: -1 (water) to 1 (dense vegetation)

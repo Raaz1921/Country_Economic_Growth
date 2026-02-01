@@ -1,0 +1,64 @@
+# Model Configuration
+
+# Backbone architecture
+backbone: resnet50  # Options: resnet50, resnet101, efficientnet_b3
+pretrained: true
+use_attention: false  # Use attention mechanism
+
+# Model parameters
+num_indicators: 5
+dropout_rate: 0.3
+hidden_dim: 512
+
+# Training parameters
+batch_size: 16
+num_epochs: 50
+learning_rate: 0.0001
+weight_decay: 0.00001
+
+# Optimizer and scheduler
+optimizer: adamw  # Options: adam, adamw
+scheduler: plateau  # Options: plateau, cosine
+scheduler_patience: 5
+
+# Early stopping
+early_stopping_patience: 10
+
+# Data parameters
+image_size: 224
+train_split: 0.7
+val_split: 0.15
+# test_split is implicit: 1 - train_split - val_split
+
+# Data augmentation
+augmentation: true
+
+# Multi-task learning weights
+task_weights:
+  economic_activity: 1.0
+  nightlight_intensity: 0.5
+  building_density: 0.5
+  road_density: 0.3
+  vegetation_index: 0.3
+
+# Performance optimization
+use_amp: true  # Mixed precision training
+num_workers: 4
+pin_memory: true
+
+# Paths
+data_dir: data/raw/images
+labels_file: data/raw/labels.csv
+model_dir: models
+output_dir: outputs
+
+# Checkpointing
+checkpoint_interval: 10  # Save checkpoint every N epochs
+save_best_only: false
+
+# Logging
+log_interval: 10  # Log every N batches
+verbose: true
+
+# Random seed for reproducibility
+seed: 42
