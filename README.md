@@ -41,7 +41,7 @@ This project leverages satellite imagery to predict five key economic indicators
 ## 📁 Project Structure
 
 ```
-satellite_project/
+Conutry_Economic_Growth/
 ├── 📂 src/                          # Source code
 │   ├── model.py                     # Neural network architectures
 │   ├── dataset.py                   # Data loading & preprocessing
@@ -87,7 +87,7 @@ satellite_project/
 
 ```bash
 # Clone/navigate to the project
-cd satellite_project
+cd Give_name
 
 # Run the quick start script
 chmod +x quickstart.sh
@@ -418,17 +418,7 @@ Contributions are welcome! Areas for improvement:
 
 ---
 
-## 📝 Citation
 
-If you use this project in your research, please cite:
-
-```bibtex
-@software{satellite_economics_predictor,
-  title={Satellite Image Economic Activity Predictor},
-  author={Your Name},
-  year={2025},
-  url={https://github.com/yourusername/satellite_project}
-}
 ```
 
 ---
@@ -463,11 +453,6 @@ python src/train.py --batch_size 8
 
 ---
 
-## 📧 Contact
-
-For questions, suggestions, or collaborations:
-- Email: your.email@example.com
-- GitHub Issues: [Report a bug](https://github.com/yourusername/satellite_project/issues)
 
 ---
 
